@@ -32,7 +32,9 @@ export default function About () {
 return (
     <div>
         <Desktop>
-            Hi this is me
+            <div>
+              <Typography variant="h1" align="center">ABOUT</Typography>
+            </div>
         </Desktop>
 
 
