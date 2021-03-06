@@ -33,7 +33,8 @@ return (
     <div>
         <Desktop>
             <div>
-              <Typography variant="h1" align="center">ABOUT</Typography>
+              <Typography variant="h1" align="center" className="title">ABOUT</Typography>
+              
             </div>
         </Desktop>
 

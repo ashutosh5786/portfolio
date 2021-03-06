@@ -4,6 +4,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { useMediaQuery } from 'react-responsive'
 
+//importing the files for elevation
+import Slide from "@material-ui/core/Slide"
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 // Importing the icons
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -11,6 +15,22 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 //importing the css file
 import '../style/navigation.css';
+
+
+// Making the navigation-bar elevated
+function OnScroll(props) {
+  const  {children, window} = props;
+  
+  const trigger = useScrollTrigger({ 
+    disableHysteresis: true,
+    threshold: 0,
+    target: window ? window() : undefined, 
+  });
+
+  return React.cloneElement(children, {
+      elevation: trigger ? 4 : 0,
+    });
+}
 
 
 const Desktop = ({ children }) => {
@@ -31,12 +51,13 @@ const Default = ({ children }) => {
 }
 
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   return (
     <div className="navbar">
       {/* For Desktop */}
       <Desktop>
-      <AppBar position="static">
+      <OnScroll {...props}>
+      <AppBar>
         <Toolbar>
           <Typography variant="h6" className="nav_p">
             About
@@ -57,10 +78,12 @@ export default function ButtonAppBar() {
           <Typography><a href="https://www.linkedin.com/in/ashutosh-singh5786/"><LinkedInIcon id='icons'/></a></Typography>
         </Toolbar>
       </AppBar>
+      </OnScroll>
       </Desktop>
+
       {/* For Tablets */}
       <Tablet>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <Typography variant="h6" className="nav_p">
             About
