@@ -2,7 +2,8 @@
 import MyAppBar from './components/navigation'
 // Importing the Introduction
 import Intro from './components/intro'
-// import 
+// importing the about page
+import About from './components/about'
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
      <MyAppBar/>
      <Intro/>
+     <About/>
     </div>
   );
 }

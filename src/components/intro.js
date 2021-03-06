@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 // Importing the css
 import '../style/intro.css';
+import { Table } from '@material-ui/core';
 
 
 // Making it responsive
@@ -36,16 +37,20 @@ export default function Intro () {
 return (
     <div className="Default">
       <Desktop>
-          <div className="desktop">
+          <div>
             <Typography variant="h1" className="text" id="text1">Hi,</Typography>
             <Typography variant="h2" className="text" id="text2">I'm Ashutosh</Typography>
             <Typography variant="h3" className="text" id="text3">Tech-Savvy...<span class="blinking-cursor">|</span></Typography>
-         
-                
           </div>
-              
-         
       </Desktop>
+      {/* For Tablets */}
+      <Tablet>
+        <div className="Default">
+        <Typography variant="h1" className="text_tablet" id="text1_tablet">Hi,</Typography>
+            <Typography variant="h2" className="text_tablet" id="text2">I'm Ashutosh</Typography>
+            <Typography variant="h3" className="text_tablet" id="text3">Tech-Savvy...<span class="blinking-cursor">|</span></Typography>
+        </div>
+      </Tablet>
 
 
 
