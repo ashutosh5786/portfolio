@@ -1,24 +1,31 @@
+/* Default CSS for Navigation */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  flex: 1;
+}
+
+/* CSS for the title*/
 .navbar_title {
   text-align: center;
   flex-grow: 1;
   padding-right: 190px;
 }
 
+/* CSS for the Navigation-Points */
 .nav_p {
   text-align: left;
   padding: 10px;
 }
 
+/* CSS for the Icons */
 #icons {
   align-items: right;
   color: white;
   flex: 1;
   padding: 0.5em;
   font-size: 30px;
-}
-
-/* Default CSS for Navigation */
-* {
-  padding: 0;
-  margin: 0;
 }
