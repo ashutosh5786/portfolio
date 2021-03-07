@@ -4,6 +4,8 @@ import MyAppBar from './components/navigation'
 import Intro from './components/intro'
 // importing the about page
 import About from './components/about'
+// importing the skills page
+import Skills from './components/skills'
 
 
 
@@ -17,6 +19,7 @@ function App() {
      <MyAppBar/>
      <Intro/>
      <About/>
+     <Skills/>
     </div>
   );
 }

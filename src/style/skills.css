@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+}
+#paper1 {
+  width: 100%;
+  align-content: center;
+  opacity: 90%;
+}
+.Buttons {
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
