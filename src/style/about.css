@@ -1,4 +1,7 @@
 .title {
-  color: white;
-  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.about {
+  background-color: rgba(213, 255, 12, 0.1);
 }

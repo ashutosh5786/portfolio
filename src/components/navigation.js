@@ -5,9 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import { useMediaQuery } from 'react-responsive'
 
 //importing the files for elevation
-import Slide from "@material-ui/core/Slide"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import CssBaseline from "@material-ui/core/CssBaseline";
+
 
 // Importing the icons
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -51,13 +50,15 @@ const Default = ({ children }) => {
 }
 
 
+
+
 export default function ButtonAppBar(props) {
   return (
     <div className="navbar">
       {/* For Desktop */}
       <Desktop>
       <OnScroll {...props}>
-      <AppBar>
+      <AppBar color="primary">
         <Toolbar>
           <Typography variant="h6" className="nav_p">
             About
@@ -83,6 +84,7 @@ export default function ButtonAppBar(props) {
 
       {/* For Tablets */}
       <Tablet>
+      <OnScroll>
       <AppBar>
         <Toolbar>
           <Typography variant="h6" className="nav_p">
@@ -104,6 +106,7 @@ export default function ButtonAppBar(props) {
           <Typography><a href="https://www.linkedin.com/in/ashutosh-singh5786/"><LinkedInIcon id='icons'/></a></Typography>
         </Toolbar>
       </AppBar>
+      </OnScroll>
       </Tablet>
       {/* For Mobile 
       
