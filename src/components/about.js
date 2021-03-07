@@ -33,7 +33,7 @@ return (
     <div className="about">
         <Desktop>
             <div>
-              <Typography variant="h1" align="center" className="title">ABOUT</Typography>
+              <Typography variant="h1" align="center" className="title"><hr id="h_line"/>ABOUT<hr id="h_line"/></Typography>
               <Typography variant="h5" align="center" className="content">Ashutosh is a team player who loves to be around technology.
               <br/>He is working smart and hard to fulfill his wish of becoming the "Best Technocrat in the World".<br/>
               He enjoys applying automation in his works, playing with the codes, resolving errors, and contributing to the community
