@@ -9,9 +9,6 @@ import CardContent from "@material-ui/core/CardContent";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import Link from "@material-ui/core/Link";
 
-// Importing the Css
-import "../style/contact.css";
-
 // Making it responsive
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
