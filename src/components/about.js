@@ -29,7 +29,7 @@ export default function About() {
   return (
     <div className="about" name="about">
       <div>
-        <Typography variant="h1" align="center" className="title">
+        <Typography variant="h1" align="center" className="title1">
           <Paper elevation={7} id="paper1">
             ABOUT
           </Paper>

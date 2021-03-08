@@ -41,8 +41,8 @@ const Default = ({ children }) => {
 export default function Project() {
   return (
     <div name="project">
-      <Typography variant="h1" className="title">
-        <Paper elevation={5} id="paper1">
+      <Typography variant="h1" className="title3">
+        <Paper elevation={5} id="paper3">
           PROJECTs
         </Paper>
       </Typography>

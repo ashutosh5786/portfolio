@@ -9,6 +9,9 @@ import CardContent from "@material-ui/core/CardContent";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import Link from "@material-ui/core/Link";
 
+// Importing the Contact.css
+import "../style/contact.css";
+
 // Making it responsive
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -30,7 +33,7 @@ const Default = ({ children }) => {
 export default function contact() {
   return (
     <div name="contact">
-      <Typography variant="h1" className="title">
+      <Typography variant="h1" className="title4">
         <Paper elevation={3} id="paper1">
           Contact
         </Paper>
