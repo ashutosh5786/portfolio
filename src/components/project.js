@@ -1,36 +1,75 @@
-  // Importing the Files
-  import React from 'react';
-  import { useMediaQuery } from 'react-responsive'
-  import Typography from '@material-ui/core/Typography';
-  import Paper from '@material-ui/core/Paper';
+// Importing the Files
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+import hadoop from "../images/hadoop.png";
 
-    // Importing the css
-    import '../style/project.css';
+// Importing the css
+import "../style/project.css";
 
-      // Making it responsive
-  const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 })
-    return isDesktop ? children : null
-  }
-  const Tablet = ({ children }) => {
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-    return isTablet ? children : null
-  }
-  const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
-    return isMobile ? children : null
-  }
-  const Default = ({ children }) => {
-    const isNotMobile = useMediaQuery({ minWidth: 768 })
-    return isNotMobile ? children : null
-  }
+// Making it responsive
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
+  return isDesktop ? children : null;
+};
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+  return isTablet ? children : null;
+};
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  return isMobile ? children : null;
+};
+const Default = ({ children }) => {
+  const isNotMobile = useMediaQuery({ minWidth: 768 });
+  return isNotMobile ? children : null;
+};
 
-
-  export default function Project () {
-      return (
-          <div name="project">
-              <Typography variant="h1" className="title"><Paper elevation={5} id="paper1">PROJECT</Paper></Typography>
-              
-          </div>
-      )
-  }
+export default function Project() {
+  return (
+    <div name="project">
+      <Typography variant="h1" className="title">
+        <Paper elevation={5} id="paper1">
+          PROJECT
+        </Paper>
+      </Typography>
+      <Card className="card">
+        <CardActionArea>
+          <CardContent>
+            <CardMedia className="image" image={hadoop} title="lvm" />
+            <Typography variant="h5" component="h1" align="center">
+              Manage L.V.M Using ANSIBLE
+            </Typography>
+            <Typography
+              id="body1"
+              variant="body1"
+              component="h1"
+              align="center"
+            >
+              Integrated the Python with Ansible to create a PlayBook for
+              managing LVM
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button
+              href="https://h1dd3nbl4d3.medium.com/hadoop-datanode-and-lvm-integration-with-ansible-python-2be148cdad9e"
+              color="primary"
+              id="but"
+              variant="contained"
+              fullWidth
+            >
+              Learn More
+            </Button>
+          </CardActions>
+        </CardActionArea>
+      </Card>
+    </div>
+  );
+}

@@ -3,3 +3,16 @@
   align-content: center;
   opacity: 90%;
 }
+.card {
+  max-width: 345px;
+  margin: auto;
+}
+.image {
+  height: 140px;
+}
+#but {
+  margin: auto;
+}
+#body1 {
+  margin-top: 10px;
+}
