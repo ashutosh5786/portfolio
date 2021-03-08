@@ -40,7 +40,7 @@ const Default = ({ children }) => {
 
 export default function Project() {
   return (
-    <div name="project" className="project">
+    <div name="project">
       <Typography variant="h1" className="title">
         <Paper elevation={5} id="paper1">
           PROJECTs
