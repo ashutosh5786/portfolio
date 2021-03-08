@@ -6,6 +6,9 @@
 .card {
   max-width: 380px;
   margin: auto;
+  text-align: center;
+  margin-bottom: 5rem;
+  text-decoration: none;
 }
 
 .image {

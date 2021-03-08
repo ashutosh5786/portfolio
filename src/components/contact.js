@@ -3,8 +3,14 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import Link from "@material-ui/core/Link";
 
 // Importing the Css
+import "../style/contact.css";
 
 // Making it responsive
 const Desktop = ({ children }) => {
@@ -32,6 +38,19 @@ export default function contact() {
           Contact
         </Paper>
       </Typography>
+
+      <Card className="card">
+        <CardActionArea>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              <MailOutlineIcon fontSize="large" color="primary" />
+            </Typography>
+            <Typography component="h6" variant="h6">
+              <Link href="mailto:ashutosh5786@outlook.com">Email Me</Link>
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
     </div>
   );
 }
