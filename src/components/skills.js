@@ -51,8 +51,8 @@
   export default function Skills() {
         return (
           <ThemeProvider theme={theme}>
-          <div>
-              <Typography variant="h1" className="title"><Paper elevation={4} id="paper1">Skills</Paper></Typography>
+          <div name="skills">
+              <Typography variant="h1" className="title"><Paper elevation={4} id="paper1">SKILLS</Paper></Typography>
               <div className="Buttons">
                 <Button variant="outlined" color="primary"  id="1"> Amazon Web Services</Button>
                 <Button variant="outlined" color="secondary"  id="1"> Azure</Button>

@@ -35,7 +35,7 @@ const Desktop = ({ children }) => {
 export default function Intro () {
 
 return (
-    <div className="Default">
+    <div name="intro" className="Default">
       <Desktop>
           <div>
             <Typography variant="h1" className="text" id="text1">Hi,</Typography>

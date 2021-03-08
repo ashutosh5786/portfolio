@@ -32,7 +32,7 @@ const Desktop = ({ children }) => {
 export default function About () {
 
 return (
-    <div className="about">
+    <div className="about" name="about">
         <Desktop>
             <div>
               <Typography variant="h1" align="center" className="title"><Paper elevation={7} id="paper1">ABOUT</Paper></Typography>

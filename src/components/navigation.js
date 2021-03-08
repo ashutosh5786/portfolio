@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { useMediaQuery } from 'react-responsive'
-
+import { Link} from 'react-scroll'
 //importing the files for elevation
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
@@ -61,19 +61,21 @@ export default function ButtonAppBar(props) {
       <AppBar color="primary">
         <Toolbar>
           <Typography variant="h6" className="nav_p">
-            About
+          <Link to="about" spy={true} smooth={true} duration={500} delay={100}>
+            About</Link>
           </Typography>
           <Typography variant="h6" className="nav_p">
-            Skills
+          <Link to="skills" spy={true} smooth={true} duration={500} delay={100}>
+            Skills</Link>
           </Typography>
           <Typography variant="h6" className="nav_p">
-            Projects
+          <Link to="project" spy={true} smooth={true} duration={500} delay={100}>Projects</Link>
           </Typography>
           <Typography variant="h6" className="nav_p">
-            Contact
+          <Link to="contact" spy={true} smooth={true} duration={500} delay={100}>Contact</Link>
           </Typography>
           <Typography variant="h4" className="navbar_title">
-            Ashutosh Singh
+          Ashutosh Singh
           </Typography>
           <Typography><a href="https://github.com/ashutosh5786"><GitHubIcon id='icons'/></a></Typography>
           <Typography><a href="https://www.linkedin.com/in/ashutosh-singh5786/"><LinkedInIcon id='icons'/></a></Typography>

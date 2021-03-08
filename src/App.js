@@ -6,7 +6,8 @@ import Intro from './components/intro'
 import About from './components/about'
 // importing the skills page
 import Skills from './components/skills'
-
+// Importing the project page
+import Project from './components/project'
 
 
 // Importing the Styles
@@ -20,6 +21,7 @@ function App() {
      <Intro/>
      <About/>
      <Skills/>
+     <Project/>
     </div>
   );
 }
