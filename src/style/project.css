@@ -4,15 +4,18 @@
   opacity: 90%;
 }
 .card {
-  max-width: 345px;
+  max-width: 380px;
   margin: auto;
 }
+
 .image {
-  height: 140px;
-}
-#but {
+  min-height: 140px;
   margin: auto;
+}
+
+#but {
+  margin-top: 10px;
 }
 #body1 {
-  margin-top: 10px;
+  margin: 5px;
 }
