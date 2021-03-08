@@ -14,6 +14,9 @@ import Contact from "./components/contact";
 // Importing the Styles
 import "./style/navigation.css";
 import "./style/intro.css";
+import "./style/about.css";
+import "./style/skills.css";
+import "./style/project.css";
 
 function App() {
   return (
