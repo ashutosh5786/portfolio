@@ -49,9 +49,7 @@ export default function Skills() {
     <ThemeProvider theme={theme}>
       <div name="skills">
         <Typography variant="h1" className="title2">
-          <Paper elevation={4} id="paper2">
-            SKILLS
-          </Paper>
+          <Paper elevation={4}>SKILLS</Paper>
         </Typography>
         <div className="Buttons">
           <Button variant="outlined" color="primary" id="1">

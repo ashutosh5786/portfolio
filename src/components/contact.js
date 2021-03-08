@@ -34,9 +34,7 @@ export default function contact() {
   return (
     <div name="contact">
       <Typography variant="h1" className="title4">
-        <Paper elevation={3} id="paper1">
-          Contact
-        </Paper>
+        <Paper elevation={3}>Contact</Paper>
       </Typography>
 
       <Card className="card">

@@ -42,9 +42,7 @@ export default function Project() {
   return (
     <div name="project">
       <Typography variant="h1" className="title3">
-        <Paper elevation={5} id="paper3">
-          PROJECTs
-        </Paper>
+        <Paper elevation={5}>PROJECTs</Paper>
       </Typography>
       <Grid container>
         <Grid item xs={12} sm={6} md={4} style={{ display: "flex" }}>

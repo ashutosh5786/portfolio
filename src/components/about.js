@@ -30,9 +30,7 @@ export default function About() {
     <div className="about" name="about">
       <div>
         <Typography variant="h1" align="center" className="title1">
-          <Paper elevation={7} id="paper1">
-            ABOUT
-          </Paper>
+          <Paper elevation={7}>ABOUT</Paper>
         </Typography>
         <Typography variant="h6" align="center" className="content">
           Ashutosh is a team player who loves to be around technology.
