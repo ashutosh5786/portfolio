@@ -30,3 +30,12 @@
   padding: 0.5em;
   font-size: 30px;
 }
+.navbar_title_tablet {
+  text-align: center;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+.navbar_title_Mobile {
+  text-align: center;
+  flex-grow: 1;
+}

@@ -2,7 +2,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
 
 // Importing the css
 import "../style/intro.css";
