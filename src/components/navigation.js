@@ -4,8 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
-import MenuIcon from "@material-ui/icons/Menu";
-import IconButton from "@material-ui/core/IconButton";
+
 //importing the files for elevation
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
@@ -188,11 +187,18 @@ export default function ButtonAppBar(props) {
         <OnScroll>
           <AppBar>
             <Toolbar>
-              <IconButton edge="start" color="inherit" aria-label="menu">
-                <MenuIcon />
-              </IconButton>
+              <Typography>
+                <a href="https://github.com/ashutosh5786">
+                  <GitHubIcon id="icons" />
+                </a>
+              </Typography>
               <Typography variant="h4" className="navbar_title_Mobile">
                 Ashutosh Singh
+              </Typography>
+              <Typography>
+                <a href="https://www.linkedin.com/in/ashutosh-singh5786/">
+                  <LinkedInIcon id="icons" />
+                </a>
               </Typography>
             </Toolbar>
           </AppBar>
