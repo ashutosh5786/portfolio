@@ -1,6 +1,6 @@
 // Importing the Files
 import React from "react";
-import { useMediaQuery } from "react-responsive";
+
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Card from "@material-ui/core/Card";
@@ -11,24 +11,6 @@ import Link from "@material-ui/core/Link";
 
 // Importing the Contact.css
 import "../style/contact.css";
-
-// Making it responsive
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 });
-  return isDesktop ? children : null;
-};
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-  return isTablet ? children : null;
-};
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  return isMobile ? children : null;
-};
-const Default = ({ children }) => {
-  const isNotMobile = useMediaQuery({ minWidth: 768 });
-  return isNotMobile ? children : null;
-};
 
 export default function contact() {
   return (

@@ -1,6 +1,6 @@
 // Importing the Files
 import React from "react";
-import { useMediaQuery } from "react-responsive";
+
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Card from "@material-ui/core/Card";
